@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>MOV</Id>
+            <Name>MOV</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAK3e6w9iA+UOc95ZwdRqdAgAAAAAIAAAATQBPAFYAAAAQZgAAAAEAACAAAAA5rbe/hDsah1Jh5MvRZ/7W4lXKwqXpuyMrFQqu7E17lgAAAAAOgAAAAAIAACAAAAAKwNlTaEfQ+661gLD45N8dgJLbFYQKhfjZJLBNvVeU+hAAAAAz1Y5dWIJDyGQWV3Tef3U1QAAAALhS0CJ7QdJyasMFFBsDP2FYTS4u3nEhRt1rHoqoEdkRYOb8IratA6uCyAdqRkmX5K9TF88XqHnvCufS/fa83Zs=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>MOV</Id>
+            <Name>MOV</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAK3e6w9iA+UOc95ZwdRqdAgAAAAAIAAAATQBPAFYAAAAQZgAAAAEAACAAAADkeBGdBsZB/SiAEUZ69zUXf0W5xfAFP1SV0auVIt/60AAAAAAOgAAAAAIAACAAAACmoYPtIa7QggzPqI0hLIg9IWmpZjnjRclI81waArt4oBAAAACL5SfSi3HHaCHUt1Vvt6fWQAAAAJ7Ju+8QIgs/wVWysi0k4lzUZ4DbxmPAO+3Mh1RO8MfO0DBKiZ3UHRHN5BSXSYM+8iZOpn8ImX9R5sBGKQm3a18=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>SSAS_MOV</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

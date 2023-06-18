@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>WD_Movie_SSAS</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Ni2F2+hin8EYD6Mb+1Iryv3X3H8=6/14/2023 1:27:51 PM6/14/2023 1:27:51 PM</TimeStamp>
+        <ID>
+          <String>Movie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>nP++NVFqJZgwyyndN5gnftfWgNs=6/14/2023 1:28:06 PM6/14/2023 1:28:06 PM</TimeStamp>
+        <ID>
+          <String>Movie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HPOLHv4VFFyucUlSGOSRtNw1o3g=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Writer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YL6j/yCLWdk5Vs1nRr/RYIf1PWg=6/14/2023 1:40:30 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Director</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3g51VDxV3xT5gC0tCyA3B8Gusfo=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Company</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FU56hrCqFBOcr4FeqJHNGtO3zDo=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Star</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3Vrn5fmYmmwz3GlLPC7dXWakzew=6/14/2023 1:40:30 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Genre</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>P/hD7y4JpeSf5O99SIeebU5q5zI=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Country</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2Q8DiDL3Nee2iw+hk97shWQSi7o=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Released Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dRllhQpgeCwJK1l+FozAtWtpfkg=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Dim Movie</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JSQdxz2uiveTzrAv5p1PBTzIpeM=6/14/2023 1:45:12 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>vCIOj1A8+ALbT495DunKv2YMUn4=6/14/2023 1:45:12 PM6/14/2023 1:40:28 PM3XMLcLrfG4EBiBP4vxGQPnBHIGw=6/14/2023 1:40:30 PM6/14/2023 1:40:29 PM</TimeStamp>
+        <ID>
+          <String>Movie</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>yb95ZsXWYQnGNyREDmYJbZqDEOw=6/14/2023 12:54:08 PM6/14/2023 12:54:07 PM</TimeStamp>
+      <ID>
+        <String>WD_Movie_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-06-14T06:45:21.413333Z</LastDeployed>
+</DeploymentSnapshot>

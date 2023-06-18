@@ -1,0 +1,68 @@
+1.
+ SELECT [Measures].[Gross] ON COLUMNS, 
+ TOPCOUNT([Dim Movie].[Name].[Name], 10, [Measures].[Gross]) ON ROWS
+ FROM [MOV]
+
+2.
+ SELECT [Measures].[Gross] ON COLUMNS, 
+           SUM([Dim Country].[Country].[Country],[Measures].[Gross]) ON ROWS
+       FROM [MOV]
+
+ WITH MEMBER [Measures].[Top 10 Gross] AS SUM
+ ([Dim Country].[Country],[Measures].[Gross]) 
+ SELECT Measures.[Top 10 Gross] ON 0,
+ TOPCOUNT([Dim Country].[Country].[Country], 10, [Measures].[Top 10 Gross]) ON 1
+  FROM [MOV]
+3.
+ WITH MEMBER [Measures].[Top 10 Gener By Gross] AS SUM
+ ([Dim Genre].[Genre],[Measures].[Gross]) 
+ SELECT Measures.[Top 10 Gener By Gross] ON 0,
+ TOPCOUNT([Dim Genre].[Genre].[Genre], 5 , [Measures].[Top 10 Gener By Gross]) ON 1
+  FROM [MOV]
+4.
+ WITH MEMBER [Measures].[Top 20 Company By Gross] AS SUM
+ ([Dim Company].[Company],[Measures].[Gross]) 
+ SELECT Measures.[Top 20 Company By Gross] ON 0,
+ TOPCOUNT([Dim Company].[Company].[Company], 20 , [Measures].[Top 20 Company By Gross]) ON 1
+  FROM [MOV]
+5.
+with member Measures.[Total Revenue] as
+SUM([Dim Director].[Director],[Measures].[Gross])
+member Measures.[Top Revenue Movie] as
+MAX (([Dim Director].[Director],[Dim Movie].[Name].[Name])
+,[Measures].[Gross])
+select {[Measures].[Top Revenue Movie],Measures.[Total Revenue]} on 0,
+TOPCOUNT([Dim Director].[Director].[Director],20, Measures.[Total Revenue]) on 1
+from [MOV]
+
+6.
+WITH MEMBER [Measures].[Avg Score] AS 
+ AVG([Dim Director].[Director],[Dim Movie].[Name].[Name],[Measures].[Score]) 
+ SELECT [Measures].[Score] ON 0,
+ ORDER(TOPCOUNT([Dim Director].[Director].[Director], 20 , [Measures].[Score]),
+          [Dim Director].[Director].CurrentMember.MemberValue,ASC) ON 1
+  FROM [MOV]
+
+7.
+ SELECT [Measures].[Budget] ON 0,
+         ORDER(TOPCOUNT( NONEMPTYCROSSJOIN(([Dim Movie].[Name].[Name], [Dim Director].[Director].                                                   [Director]), [Dim Star].[Star].[Star]), 10, [Measures].[Budget]), [Measures].[Budget], ASC) ON 1
+  FROM [MOV]
+8.
+SELECT {[Measures].[Score],[Measures].[Runtime]} ON 0,
+         ORDER(TOPCOUNT(([Dim Movie].[Name].[Name],[Dim Director].[Director].[Director]), 10, [Measures].[Score]),[Dim Movie].[Name].CurrentMember.MemberValue, BASC) ON 1
+  FROM [MOV]
+9.
+with member [Measures].[Total Revenue] as
+      SUM([Dim Writer].[Writer],[Measures].[Gross])
+    member [Measures].[Total Revenue Movie] as
+      MAX([Dim Director].[Director],[Measures].[Gross])
+select {[Measures].[Total Revenue Movie],[Measures].[Total Revenue]} on 0,
+        order(TOPCOUNT([Dim Director].[Director].[Director],10,[Measures].[Total Revenue]),
+        [Measures].[Total Revenue],DESC) ON 1
+from [MOV]
+10.
+with member [Measures].[Total Revenue] as
+      SUM(([Dim Country].[Country].&[United States],[Dim Genre].[Genre]),[Measures].[Gross])
+select [Measures].[Total Revenue] on 0,
+       TOPCOUNT([Dim Genre].[Genre].[Genre],5,[Measures].[Total Revenue]) ON 1
+from [MOV]

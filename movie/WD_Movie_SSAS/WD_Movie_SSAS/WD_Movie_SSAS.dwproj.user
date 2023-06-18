@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Movie</Id>
+            <Name>Movie</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAK3e6w9iA+UOc95ZwdRqdAgAAAAAMAAAATQBvAHYAaQBlAAAAEGYAAAABAAAgAAAA15bYnfVExpo0CdKix2hXfBPUZksbxFgMrTg3O8AXOh8AAAAADoAAAAACAAAgAAAAU4NgkkJViFLC3usLB0CyoTj5JiMXMgnjl6HtfILaQU0QAAAAAik0gRtNqlpFT5uBaZL7wUAAAABG3yXlLBTMIgvAqqEbIz17+bbijBz4RS4t4rMiuy4zFwdnECT7I9Y/aZMvb6heqt7YEM+nKgt5I/K8AuvcSLTv</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Movie</Id>
+            <Name>Movie</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAK3e6w9iA+UOc95ZwdRqdAgAAAAAMAAAATQBvAHYAaQBlAAAAEGYAAAABAAAgAAAAiYI4bR3j5Lbq35x7AgrKKSPKQN0j+zuY1m34uCNZoe0AAAAADoAAAAACAAAgAAAAZvcQnAR0lqB0edCUelzR4hW34z8bN/rCuyQQcvNEDcIQAAAAMeoyK1iYVH999gd9km/JB0AAAABCgLPEGwZ8oWIDvnfDFGzUZlvW1kr0nBpv5jPOp/25OkbA5755GzZSdzK5ykp1+lo3Ujk869rqDtyTxtVg58Xp</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>WD_Movie_SSAS</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

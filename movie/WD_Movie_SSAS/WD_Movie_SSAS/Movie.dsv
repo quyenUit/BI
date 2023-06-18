@@ -1,0 +1,290 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6d6d58f0-5f5c-4d86-bf8d-7f9420efa4c1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Movie</ID>
+  <Name>Movie</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Movie</DataSourceID>
+  <Schema>
+    <xs:schema id="Movie" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Movie" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3f26a8f1-76cc-4755-96eb-3d445d75629d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fbb3393f-571e-45f5-aaf4-088d466817c1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="f07f0de0-7101-41d2-8458-504ca2549e94" type="xs:int" />
+                  <xs:element name="movieId" msprop:FriendlyName="movieId" msprop:DbColumnName="movieId" msprop:design-time-name="b837f7ff-1d1e-4460-964f-2b097e77ad4e" type="xs:int" minOccurs="0" />
+                  <xs:element name="name" msprop:FriendlyName="name" msprop:DbColumnName="name" msprop:design-time-name="490c5266-4b0d-4112-9520-1edaf745a06f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="rating" msprop:FriendlyName="rating" msprop:DbColumnName="rating" msprop:design-time-name="2b6d3101-a85a-4e41-b496-c066d52d0794" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="genre" msprop:FriendlyName="genre" msprop:DbColumnName="genre" msprop:design-time-name="344d7c8d-932f-4b91-affe-61c43a55e7e4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="6e134fb0-7a63-4498-bd53-8569178e06ac" type="xs:double" minOccurs="0" />
+                  <xs:element name="releasedId" msprop:FriendlyName="releasedId" msprop:DbColumnName="releasedId" msprop:design-time-name="748808b6-1c0d-4d3c-b590-edd28e56d899" type="xs:int" minOccurs="0" />
+                  <xs:element name="score" msprop:FriendlyName="score" msprop:DbColumnName="score" msprop:design-time-name="5c305007-1a91-460b-af22-08b5ca2e83d7" type="xs:double" minOccurs="0" />
+                  <xs:element name="votes" msprop:FriendlyName="votes" msprop:DbColumnName="votes" msprop:design-time-name="0b05b24a-301e-4b49-ac2f-02b94278eb4f" type="xs:double" minOccurs="0" />
+                  <xs:element name="director" msprop:FriendlyName="director" msprop:DbColumnName="director" msprop:design-time-name="85b1fbae-0ed0-4688-ae76-215c24380b62" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="writerId" msprop:FriendlyName="writerId" msprop:DbColumnName="writerId" msprop:design-time-name="b933525e-4e58-48da-be58-b684a184e5e5" type="xs:int" minOccurs="0" />
+                  <xs:element name="starId" msprop:FriendlyName="starId" msprop:DbColumnName="starId" msprop:design-time-name="53781eae-37fc-4b6f-bdd2-40e6592a3545" type="xs:int" minOccurs="0" />
+                  <xs:element name="countryId" msprop:FriendlyName="countryId" msprop:DbColumnName="countryId" msprop:design-time-name="e20647b5-ed22-409f-8044-baba1225be92" type="xs:int" minOccurs="0" />
+                  <xs:element name="budget" msprop:FriendlyName="budget" msprop:DbColumnName="budget" msprop:design-time-name="2b46f05a-1a1e-46e0-8dd4-43e037b0240e" type="xs:double" minOccurs="0" />
+                  <xs:element name="gross" msprop:FriendlyName="gross" msprop:DbColumnName="gross" msprop:design-time-name="02c64b92-25f5-4904-ae99-c2a74e9d6c50" type="xs:double" minOccurs="0" />
+                  <xs:element name="companyId" msprop:FriendlyName="companyId" msprop:DbColumnName="companyId" msprop:design-time-name="8fbcb935-d65e-4fda-9ab4-cb6157c27b00" type="xs:int" minOccurs="0" />
+                  <xs:element name="runtime" msprop:FriendlyName="runtime" msprop:DbColumnName="runtime" msprop:design-time-name="01000605-cf47-4640-ba34-acfe818f89a0" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Company" msprop:DbTableName="Dim_Company" msprop:FriendlyName="Dim_Company" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a0e2b8e5-03cb-476b-960d-45fa4e760467">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="companyId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="companyId" msprop:DbColumnName="companyId" msprop:design-time-name="82d652e4-b6e2-4723-97b3-1690ba88f555" type="xs:int" />
+                  <xs:element name="company" msprop:FriendlyName="company" msprop:DbColumnName="company" msprop:design-time-name="5a6eb0c7-4750-45e1-b60c-55df0846abb0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Director" msprop:DbTableName="Dim_Director" msprop:FriendlyName="Dim_Director" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7c1e5d89-63e2-47ff-862b-32fc843f1fa2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="director" msprop:FriendlyName="director" msprop:DbColumnName="director" msprop:design-time-name="4dc6d15d-2809-4e77-924e-cad8d9e19051">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Writer" msprop:DbTableName="Dim_Writer" msprop:FriendlyName="Dim_Writer" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="09dc5415-7efd-4a11-a9c5-1a5cbe70409c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="writerId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="writerId" msprop:DbColumnName="writerId" msprop:design-time-name="27477c5b-522f-4b60-941e-89e7d01e43ee" type="xs:int" />
+                  <xs:element name="writer" msprop:FriendlyName="writer" msprop:DbColumnName="writer" msprop:design-time-name="352775b6-94fb-45ae-8d60-964e7e2d47d1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Genre" msprop:DbTableName="Dim_Genre" msprop:FriendlyName="Dim_Genre" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c4f73183-bc5a-4d31-bb3c-78b966a52780">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="genre" msprop:FriendlyName="genre" msprop:DbColumnName="genre" msprop:design-time-name="1a6ca255-19ee-499a-bc94-2eac72b0525e">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_ReleasedDate" msprop:DbTableName="Dim_ReleasedDate" msprop:FriendlyName="Dim_ReleasedDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c6c7738a-f087-42c6-896e-3dd44793bbf9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="releasedId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="releasedId" msprop:DbColumnName="releasedId" msprop:design-time-name="55051921-97c1-4e5f-a4a1-6f0c82df3f6d" type="xs:int" />
+                  <xs:element name="released" msprop:FriendlyName="released" msprop:DbColumnName="released" msprop:design-time-name="bc72b6ff-3b85-4dda-8417-fb272e380fca" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Quarters" msprop:FriendlyName="Quarters" msprop:DbColumnName="Quarters" msprop:design-time-name="23e10ab2-7167-4c1b-89a8-2d3c194a46c1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Movie" msprop:DbTableName="Dim_Movie" msprop:FriendlyName="Dim_Movie" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="17b37dbc-5ae7-4bb1-85da-8a5873487c5b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="movieId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="movieId" msprop:DbColumnName="movieId" msprop:design-time-name="0f768431-ffeb-4972-9c6b-8026b55f1a87" type="xs:int" />
+                  <xs:element name="name" msprop:FriendlyName="name" msprop:DbColumnName="name" msprop:design-time-name="ad3f6072-a518-4581-9514-fa6b5c9e1aa6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="f0ac7657-ad5a-4d79-bf24-03cca2ee725c" type="xs:double" minOccurs="0" />
+                  <xs:element name="budget" msprop:FriendlyName="budget" msprop:DbColumnName="budget" msprop:design-time-name="83c6f73f-1e36-4c99-a545-1cd4f7c48cad" type="xs:double" minOccurs="0" />
+                  <xs:element name="gross" msprop:FriendlyName="gross" msprop:DbColumnName="gross" msprop:design-time-name="c7e6bdca-5cf6-4888-a60e-4b4e53858717" type="xs:double" minOccurs="0" />
+                  <xs:element name="runtime" msprop:FriendlyName="runtime" msprop:DbColumnName="runtime" msprop:design-time-name="de0ebf47-a1e6-4e11-a744-f2dce0ec890e" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Country" msprop:DbTableName="Dim_Country" msprop:FriendlyName="Dim_Country" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7a4111bd-81ef-4a3a-a044-98bc5c4faf4c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="countryId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="countryId" msprop:DbColumnName="countryId" msprop:design-time-name="5b05d7bc-b9d8-4f86-b203-e026e1edefac" type="xs:int" />
+                  <xs:element name="country" msprop:FriendlyName="country" msprop:DbColumnName="country" msprop:design-time-name="b528b52c-d6bc-4a70-86db-d2d2e29a0d46" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Star" msprop:DbTableName="Dim_Star" msprop:FriendlyName="Dim_Star" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1a9c2f53-42e2-4d68-89a4-5b470e897e88">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="starId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="starId" msprop:DbColumnName="starId" msprop:design-time-name="cefc313c-2a33-4605-adba-e5c27bedb821" type="xs:int" />
+                  <xs:element name="star" msprop:FriendlyName="star" msprop:DbColumnName="star" msprop:design-time-name="9ac2f9ba-8627-461f-b9d3-60120ae81b1e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Company_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Company" />
+          <xs:field xpath="companyId" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Director_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Director" />
+          <xs:field xpath="director" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Writer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Writer" />
+          <xs:field xpath="writerId" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Genre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Genre" />
+          <xs:field xpath="genre" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_ReleasedDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_ReleasedDate" />
+          <xs:field xpath="releasedId" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Movie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Movie" />
+          <xs:field xpath="movieId" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Country_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Country" />
+          <xs:field xpath="countryId" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Star_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Star" />
+          <xs:field xpath="starId" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Dim_Writer" refer="dbo_Dim_Writer_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="writerId" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Director" refer="dbo_Dim_Director_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="director" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Company" refer="dbo_Dim_Company_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="companyId" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Star" refer="dbo_Dim_Star_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="starId" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Genre" refer="dbo_Dim_Genre_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="genre" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Country" refer="dbo_Dim_Country_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="countryId" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_ReleasedDate" refer="dbo_Dim_ReleasedDate_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="releasedId" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_Movie" refer="dbo_Dim_Movie_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="movieId" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Movie xmlns="" />
+  </Schema>
+</DataSourceView>
